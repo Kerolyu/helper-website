@@ -1,0 +1,36 @@
+@import "./sections/header" ;
+@import "./sections/hero" ;
+
+:root{
+    --text-color: #3F3F3F;
+    --light-blue: #D4EEFE;
+    --bright-blue: #5CC0FF;
+    --yellow: #F2DB4D;
+  }
+  body{
+    font-family: 'Cabin', sans-serif;
+    color: var(--text-color);
+    background-color: #F5FAFF;
+  }
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  * a {
+    text-decoration: none;
+    color: inherit;
+  }
+  * li{
+    list-style: none;
+  }
+
+  
+  .container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+
+    @media screen and (min-width: 760px){
+    max-width: 90vw;}
+  }
