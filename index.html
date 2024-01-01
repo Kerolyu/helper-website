@@ -5,75 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Helper Website</title>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap");
     </style>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap");
     </style>
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <header class="main-header">
     <div class="top-header container">
-      <img src="/images/Logo-blue.svg" alt="company-logo" width="110" height="34" />
-    <div class="top-header-wrapper">
-      <ul class="top-header__list">
-        <li class="top-header__list-item"><a href="#"> Help</a></li>
-        <li class="top-header__list-item"><a href="#">FAQ</a></li>
-        <li class="top-header__list-item"><a href="#">English</a></li>
-      </ul>
-      <div class="icons-menu">
-        <a href="#"><img src="images/Clipboard-alt.svg" alt=""></a>
-        <a href="#"> <img src="images/message-icon.svg" alt=""></a>
-        <div class="icons-menu__profile">
-          <a href=""> <img src="images/User.svg" alt=""></a>
-          <p>My profile</p>
+      <img src="images/Logo-blue.svg" alt="company-logo" width="110" height="34" />
+      <div class="top-header-wrapper">
+        <ul class="top-header__list">
+          <li class="top-header__list-item"><a href="#"> Help</a></li>
+          <li class="top-header__list-item"><a href="#">FAQ</a></li>
+          <li class="top-header__list-item"><a href="#">English</a></li>
+        </ul>
+        <div class="icons-menu">
+          <a href="#"><img src="images/Clipboard-alt.svg" alt="" /></a>
+          <a href="#"> <img src="images/message-icon.svg" alt="" /></a>
+          <div class="icons-menu__profile">
+            <a href=""> <img src="images/User.svg" alt="" /></a>
+            <p>My profile</p>
+          </div>
         </div>
-  
-      </div>      
-      <div class="mobile-menu-button"><img src="/images/Menu.svg" alt="burger-menu"></div>
-    </div>
+        <div class="mobile-menu-button">
+          <img src="images/Menu.svg" alt="burger-menu" />
+        </div>
+      </div>
     </div>
     <nav class="nav-wrapper">
-     <div class="container nav-header">
-      <div class="navigation">
-        <a href="#" class="navigation__item">House Cleaning</a>
-        <a href="#" class="navigation__item">Apartment Cleaning</a>
-        <a href="#" class="navigation__item">Office Cleaning</a>
-        <a href="#" class="navigation__item accent-item">Quote Calculator</a>
+      <div class="container nav-header">
+        <div class="navigation">
+          <a href="#" class="navigation__item">House Cleaning</a>
+          <a href="#" class="navigation__item">Apartment Cleaning</a>
+          <a href="#" class="navigation__item">Office Cleaning</a>
+          <a href="#" class="navigation__item accent-item">Quote Calculator</a>
+        </div>
+        <div class="search-field">
+          <label for="site-search">Search</label>
+          <input type="search" id="site-search" name="q" placeholder="Search" />
+        </div>
       </div>
-      <div class="search-field">
-      <label for="site-search" >Search</label>
-      <input type="search" id="site-search" name="q" placeholder ="Search" />
-    </div>
-     </div>
-  </nav>
+    </nav>
   </header>
   <body>
-  
-    <section class="hero-section ">  
+    <section class="hero-section">
       <div class="float-wrapper">
-      <div class="float-hero-1"><p>Open My bookings</p></div>
-    </div>
-    <div class="float-wrapper">
-      <div class="float-hero-2"><p>Open Chat</p></div>
-    </div>
-    <div class="container">
-      <div class="hero-text-wrapper">
-        <h1>You do the booking,<br> We do the rest.</h1>
-      <div class="hero-cta-float">
-        <p>Clean my :</p>
-        <a href="#" class="hero-options">Apartment</a>
-        <a href="#" class="hero-options">House</a>
-        <a href="#" class="hero-options">Office</a>
+        <div class="float-hero-1"><p>Open My bookings</p></div>
       </div>
+      <div class="float-wrapper">
+        <div class="float-hero-2"><p>Open Chat</p></div>
       </div>
-      <div class="hero-floats">
-        <img src="images/clean-my-apt.svg" alt="Clean my apartment">
-        <img class="hero-floats__right" src="/images/clean-my-house.svg" alt="Clean my house">
-        <img src="images/clean-my-office.svg" alt="Clean my office">
+      <div class="container">
+        <div class="hero-text-wrapper">
+          <h1>
+            You do the booking,<br />
+            We do the rest.
+          </h1>
+          <div class="hero-cta-float">
+            <p>Clean my :</p>
+            <a href="#" class="hero-options">Apartment</a>
+            <a href="#" class="hero-options">House</a>
+            <a href="#" class="hero-options">Office</a>
+          </div>
+        </div>
+        <div class="hero-floats">
+          <img src="images/clean-my-apt.svg" alt="Clean my apartment" />
+          <img
+            class="hero-floats__right"
+            src="images/clean-my-house.svg"
+            alt="Clean my house"
+          />
+          <img src="images/clean-my-office.svg" alt="Clean my office" />
+        </div>
+        <div></div>
       </div>
-      <div></div>
-    </div>
     </section>
   </body>
 </html>
