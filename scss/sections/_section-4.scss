@@ -32,7 +32,7 @@
   z-index: -10;
   height: 100%;
   width: 100vw;
-  background-image: url(../../images/bg-blue.svg);
+  background-image: url(../images/bg-blue.svg);
   background-size: cover;
   background-position: 80% 0%;
   background-repeat: no-repeat;
@@ -277,7 +277,7 @@
 .service-pro-bg {
   width: 100%;
   height: 200px;
-  background-image: url(/images/Frame-bg.svg);
+  background-image: url(../images/Frame-bg.svg);
   background-size: cover;
   @media screen and (min-width: 1060px) {
     height: 300px;
