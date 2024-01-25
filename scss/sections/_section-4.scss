@@ -106,6 +106,7 @@
     border: 1px solid var(--blue-accent);
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 6px;
+    cursor: pointer;
     @media screen and (min-width: 760px) {
       font-size: 1.1rem;
     }
@@ -115,7 +116,14 @@
     @media screen and (min-width: 1060px) {
       padding: 0.8rem;
     }
+    &:hover {
+      background: var(--bright-blue);
+    }
   }
+}
+.desc-selected {
+  background-color: var(--bright-blue);
+  border: 1px solid var(--blue-accent);
 }
 .calculator-special-style {
   @media screen and (min-width: 760px) {
@@ -212,10 +220,15 @@
   font-family: Fredoka, sans serif;
   font-size: 1.1rem;
   font-weight: 400;
+  transition: all 0.3s;
   @media screen and (min-width: 760px) {
     font-size: 1.4rem;
     font-weight: normal;
     padding: 1rem 2rem;
+  }
+  &:hover {
+    background: linear-gradient(179deg, #f2db4d 0.54%, #fab400 203.74%);
+    box-shadow: 0px 5px 4px 0px rgba(77, 77, 77, 0.25);
   }
 }
 .cleaner-image {
@@ -226,9 +239,10 @@
     height: 400px;
   }
   @media screen and (min-width: 1060px) {
-    z-index: -2;
-    left: 40%;
+    z-index: 2;
+    left: 45%;
     right: 0;
+    top: -5%;
     height: 500px;
   }
 }

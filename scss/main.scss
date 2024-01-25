@@ -5,12 +5,17 @@
 @import "./sections/section-4";
 @import "./sections/section-5";
 @import "./sections/footer";
+@import "./components/mobile-menu";
 
+*button {
+  cursor: pointer;
+}
 :root {
   --text-color: #3f3f3f;
   --light-blue: #d4eefe;
   --bright-blue: #5cc0ff;
   --yellow: #f2db4d;
+  --border-blue: #80caff;
   --blue-accent: #07a0ff;
   --text-headings: #2d4331;
 }

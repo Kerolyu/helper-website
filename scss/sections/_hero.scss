@@ -65,13 +65,23 @@ h1 {
   padding: 10px 1rem;
   background-color: var(--yellow);
   border-radius: 6px;
+  transition: background 0.4s box-shadow 0.4s;
+  transition-timing-function: ease-in;
+  &:hover {
+    background: linear-gradient(179deg, #f2db4d 0.54%, #fab400 203.74%);
+    box-shadow: 0px 5px 4px 0px rgba(77, 77, 77, 0.25);
+  }
 }
 .float-wrapper {
   display: none;
+  transition: all 0.3s;
   @media screen and (min-width: 1060px) {
     display: block;
     position: relative;
     width: 100%;
+  }
+  &:hover {
+    color: var(--bright-blue);
   }
 }
 .float-hero-1 {

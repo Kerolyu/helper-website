@@ -11,6 +11,8 @@
       @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap");
     </style>
     <link rel="stylesheet" href="css/main.min.css" />
+    <script src="js/main.js" defer></script>
+    <script src="js/calculator.js" defer></script>
   </head>
   <header class="main-header">
     <div class="top-header container">
@@ -48,15 +50,28 @@
         </div>
       </div>
     </nav>
+    <div class="mobile-menu lg-hidden">
+      <ul>
+        <li><a href="#">Find Cleaning</a></li>
+        <li><a href="#">Quote Calculator</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+      <button class="sign-up-mobile" type="button">Log In/Sign Up</button>
+    </div>
   </header>
   <body>
     <section class="hero-section">
-      <div class="float-wrapper">
-        <div class="float-hero-1"><p>Open My bookings</p></div>
-      </div>
-      <div class="float-wrapper">
-        <div class="float-hero-2"><p>Open Chat</p></div>
-      </div>
+      <a href="#">
+        <div class="float-wrapper">
+          <div class="float-hero-1"><p>Open My bookings</p></div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="float-wrapper">
+          <div class="float-hero-2"><p>Open Chat</p></div>
+        </div>
+      </a>
       <div class="container">
         <div class="hero-text-wrapper">
           <h1>
@@ -1738,11 +1753,11 @@
               <div class="calculator-number">1</div>
               <p class="calculator-tab_name">Type of Cleaning</p>
               <div class="calculator-options">
-                <div class="calculator-options_desc">
+                <div class="calculator-options_desc" id="cleaning-options">
                   <div class="calculator-toggle"></div>
                   Maintenance
                 </div>
-                <div class="calculator-options_desc">
+                <div class="calculator-options_desc" id="cleaning-options">
                   <div class="calculator-toggle"></div>
                   Deep Cleaning
                 </div>
@@ -1752,15 +1767,15 @@
               <div class="calculator-number">2</div>
               <p class="calculator-tab_name">Type of Property</p>
               <div class="calculator-options tab-2">
-                <div class="calculator-options_desc">
+                <div class="calculator-options_desc" id="propertyOptions">
                   <div class="calculator-toggle"></div>
                   Apartment
                 </div>
-                <div class="calculator-options_desc">
+                <div class="calculator-options_desc" id="propertyOptions">
                   <div class="calculator-toggle"></div>
                   House
                 </div>
-                <div class="calculator-options_desc">
+                <div class="calculator-options_desc" id="propertyOptions">
                   <div class="calculator-toggle"></div>
                   Office
                 </div>
@@ -1780,10 +1795,13 @@
                         alt="minus-sign"
                         width="40px"
                         height="40px"
+                        id="minusButton"
                       />
                     </button>
-                    <div class="calculator-amount">1</div>
-                    <button><img src="images/plus.svg" alt="plus-sign" /></button>
+                    <div class="calculator-amount" id="bedroomAmount">1</div>
+                    <button>
+                      <img src="images/plus.svg" alt="plus-sign" id="plusButton" />
+                    </button>
                   </div>
                 </div>
                 <div class="calculator-options-quantity">
@@ -1796,10 +1814,13 @@
                         alt="minus-sign"
                         width="40px"
                         height="40px"
+                        id="minusBButton"
                       />
                     </button>
-                    <div class="calculator-amount">1</div>
-                    <button><img src="images/plus.svg" alt="plus-sign" /></button>
+                    <div class="calculator-amount" id="bathroomsAmount">1</div>
+                    <button>
+                      <img src="images/plus.svg" alt="plus-sign" id="plusBButton" />
+                    </button>
                   </div>
                 </div>
               </div>
@@ -1829,12 +1850,14 @@
           <div class="divider lg-hidden"></div>
           <div class="calculator-results">
             <p class="calculator-results_heading">You chose:</p>
-            <p class="selected-result">Maintenance</p>
-            <p class="selected-result">House</p>
-            <p class="selected-result">2 Bedrooms, 2 Bathrooms</p>
+            <p class="selected-result" id="selected-cleaning-option">Maintenance</p>
+            <p class="selected-result" id="selected-property-option">Apartment</p>
+            <p class="selected-result" id="selected-bedrooms">1 Bedroom</p>
+            <p class="selected-result" id="selected-bathrooms">1 Bathroom</p>
+
             <div class="divider"></div>
             <p class="calculator-results_heading total-results">Approximate total:</p>
-            <strong class="price-result">170EUR</strong>
+            <strong class="price-result">60$</strong>
             <button class="calculator-cta">Choose a cleaner</button>
             <img src="images/character-3.svg" alt="cleaner-image" class="cleaner-image" />
             <div class="caclulator-warning lg-hidden">
