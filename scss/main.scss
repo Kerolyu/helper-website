@@ -59,3 +59,11 @@ button {
   background-color: transparent;
   border: none;
 }
+.hidden {
+  display: none;
+}
+
+.active-subheader-page {
+  background-color: var(--border-blue);
+  border-radius: 6px;
+}

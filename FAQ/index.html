@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap");
+    </style>
+    <link rel="stylesheet" href="../css/main.min.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <header class="main-header">
+    <div class="top-header container">
+      <a href="../index.html">
+        <img src="../images/Logo-blue.svg" alt="company-logo" width="110" height="34" />
+      </a>
+      <div class="top-header-wrapper">
+        <ul class="top-header__list">
+          <li class="top-header__list-item"><a href="#"> Help</a></li>
+          <li class="top-header__list-item active-subheader-page"><a href="#">FAQ</a></li>
+          <li class="top-header__list-item"><a href="#">English</a></li>
+        </ul>
+        <button type="button" class="login-button">Log in/Sign up</button>
+        <div class="icons-menu hidden">
+          <a href="#"><img src="../images/Clipboard-alt.svg" alt="" /></a>
+          <a href="#"> <img src="../images/message-icon.svg" alt="" /></a>
+          <div class="icons-menu__profile">
+            <a href=""> <img src="../images/User.svg" alt="" /></a>
+            <p>My profile</p>
+          </div>
+        </div>
+        <div class="mobile-menu-button">
+          <img src="../images/Menu.svg" alt="burger-menu" />
+        </div>
+      </div>
+    </div>
+    <nav class="nav-wrapper">
+      <div class="container nav-header">
+        <div class="navigation">
+          <a href="#" class="navigation__item">House Cleaning</a>
+          <a href="#" class="navigation__item">Apartment Cleaning</a>
+          <a href="#" class="navigation__item">Office Cleaning</a>
+          <a href="#" class="navigation__item accent-item">Quote Calculator</a>
+        </div>
+        <div class="search-field">
+          <label for="site-search">Search</label>
+          <input type="search" id="site-search" name="q" placeholder="Search" />
+        </div>
+      </div>
+    </nav>
+    <div class="mobile-menu lg-hidden">
+      <ul>
+        <li><a href="#">Find Cleaning</a></li>
+        <li><a href="#">Quote Calculator</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+      <button class="sign-up-mobile" type="button">Log In/Sign Up</button>
+    </div>
+  </header>
+  <body>
+    <section class="faq-section">
+      <h1>Frequently asked questions</h1>
+      <div class="faq">
+        <div class="faq-item">
+          <div class="faq-item__question">
+            <p>Can I schedule monthly cleaning?</p>
+            <div class="faq-item__button">
+              <div class="hor-line"></div>
+              <div class="ver-line"></div>
+            </div>
+          </div>
+          <div class="faq-item__answer">
+            <p>
+              Yes, you can set up a schedule for weekly,bi-weekly or monthly cleaning.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-item__question">
+            <p>How Far in Advance Can I Book My Task?</p>
+            <div class="faq-item__button">
+              <div class="hor-line"></div>
+              <div class="ver-line"></div>
+            </div>
+          </div>
+          <div class="faq-item__answer">
+            Yes, you can set up a schedule for weekly,bi-weekly or monthly cleaning.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-item__question">
+            <p>What Should I Do if I forgot to update the address?</p>
+            <div class="faq-item__button">
+              <div class="hor-line"></div>
+              <div class="ver-line"></div>
+            </div>
+          </div>
+          <div class="faq-item__answer">
+            If an incorrect address was entered when booking and the correct task address
+            is close by, we suggest keeping the task active and sending a message to your
+            Tasker using that task's chat thread to inform them of the correct address.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-item__question">
+            <p>How can I be sure about the cleaner's credibility?</p>
+            <div class="faq-item__button">
+              <div class="hor-line"></div>
+              <div class="ver-line"></div>
+            </div>
+          </div>
+          <div class="faq-item__answer">
+            All our cleaners go through verification check and we as a company take some
+            of the responsibility as well.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-item__question">
+            <p>Can I book a Same Day Task?</p>
+            <div class="faq-item__button">
+              <div class="hor-line"></div>
+              <div class="ver-line"></div>
+            </div>
+          </div>
+          <div class="faq-item__answer">
+            You can book same day tasks by changing the date to "Today" while viewing
+            potential Taskers.
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer-blocks">
+        <div class="footer-columns">
+          <div class="footer-logo">
+            <img src="../images/Logo.svg" alt="logo of Helper" width="50" />
+          </div>
+          <div class="footer_top-nav">
+            <ul class="footer_top-nav__wrapper">
+              <li><h3 class="footer-nav-header">Company</h3></li>
+              <li class="footer_top-nav__item"><a href="#">About Us</a></li>
+              <li class="footer_top-nav__item"><a href="#">Careers</a></li>
+              <li class="footer_top-nav__item"><a href="#">Contact us</a></li>
+              <li class="footer_top-nav__item"><a href="#">Help & FAQs</a></li>
+              <li class="footer_top-nav__item"><a href="#">Terms & Privacy</a></li>
+              <li class="footer_top-nav__item"><a href="#">Cookie Policy</a></li>
+            </ul>
+            <ul class="footer_top-nav__wrapper">
+              <li><h3 class="footer-nav-header">Discover</h3></li>
+              <li class="footer_top-nav__item"><a href="#">All Services</a></li>
+              <li class="footer_top-nav__item"><a href="#">Find local helpers</a></li>
+              <li class="footer_top-nav__item"><a href="#">Homeowner Guides</a></li>
+              <li class="footer_top-nav__item"><a href="#">Project calculator</a></li>
+              <li class="footer_top-nav__item"><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-service-pro centered">
+            <h3 class="footer-nav-header">For Service Professionals</h3>
+            <ul class="footer-grid">
+              <li class="footer_grid-item"><a href="#">Service Professional Login</a></li>
+              <li class="footer_grid-item">
+                <a href="#">Service Professional Registration</a>
+              </li>
+              <li class="footer_grid-item"><a href="#">Resource Center</a></li>
+              <li class="footer_grid-item"><a href="#">Help</a></li>
+              <li class="footer_grid-item"><a href="#">User agreement</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="form-footer">
+          <h3 class="footer-nav-header centered">Subscribe to Newsletter</h3>
+          <div class="form">
+            <div class="input-container ic1">
+              <input id="firstname" class="input" type="text" placeholder=" " />
+              <div class="cut"></div>
+              <label for="firstname" class="placeholder">Full name</label>
+            </div>
+            <div class="input-container ic2">
+              <input id="email" class="input" type="text" placeholder=" " />
+              <div class="cut cut-short"></div>
+              <label for="email" class="placeholder">Email address</label>
+            </div>
+            <button type="submit" class="submit">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="decoration">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="269"
+          height="253"
+          viewBox="0 0 269 253"
+          fill="none"
+        >
+          <path
+            d="M299 243V10.385C299 1.90083 289.1 -2.72876 282.589 2.7108L4.15553 235.326C-3.01741 241.318 1.22015 253 10.5669 253H289C294.523 253 299 248.523 299 243Z"
+            fill="url(#pattern0)"
+          />
+          <defs>
+            <pattern
+              id="pattern0"
+              patternContentUnits="objectBoundingBox"
+              width="0.164557"
+              height="0.0984848"
+            >
+              <use xlink:href="#image0_1_4354" transform="scale(0.00158228 0.00189394)" />
+            </pattern>
+            <image
+              id="image0_1_4354"
+              width="104"
+              height="52"
+              xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAAA0CAYAAABmUH0tAAAAAXNSR0IArs4c6QAAAvlJREFUeF7tnO1t2zAQht+LYRVpVSDZwNnA3aCZoN2gGSGZwPYE7QZtN2gnSDeoN0g2iH/YDSpDuYKuZDCKHH1RInkhf9mQbB7u4Yl3xxeiZM0MbUQxkf49fLbrAUo2fAPGJDcjHeHs+Jhu7ZoVZs89QMkfvsYD3u9dcoSr6DV9CS5ywwP0d8NzYsw0c35FMZ27YV6wgviOT7Zj3BVccRXFIYpcWB67hODJYw5YATiPYlq6YORLtmEH6P6eJ6MUvwGcaM5QkBYhkuwuj31Knaz5EsDnEnNURrcAsAwRNTysRzVPScJQbhFhBcYSR/iZEn6EtLw/cE+K0iySVFanP+6qLPiWjrAIoKrc1Px6adcg25PmAD41+MuwZzVwVt1bn23r7EAxPgL4AMYUXB1VRJiP35Das8Iw4IFWfbdkzVMAUxBmeptIsyfUUQbgqL9oBUif+8CetUpHeBf2pO6UOgPaFbr/I+q6kFiEllF3Pt0jKLehrI4ab3FKp6SShzBaesBIBO0hFTrjzFi8eksqG/RubDc8Y8ZtFNN3m8abBnSJh0fdCC8fcxmcfGFd2IRkFFBWP91oK06twDObK7Dp3AU4+c+tQTIKKEsYvD5CT9Z8AeBrCVgrkAKgEhIuQTIPSIjGwRVI5gEJ0ji4AMk4IGkaB9uQjAOSqHGwCck4oF0mV3zMCdA42ILUCyCpGgcbkHoBlNVDIjUOQ0PqDZCCJFXjMCSkXgFpkSRO4zAUpN4BKUhSNQ5DQBoEUN5Nkahx6BvSoIAOdZZ91zj0CckJQBI0DmWQTBxYOgfIZ42DDskEHOULJwEdqqN80DgoSMyYmDrqdxZQWcvI1Kpsespq837XAYnQOHQB7DQgCRqHLnCc3oP2Uq4X/poApyNIgghFfgQJ0Ti0BeV+BAnSOLSB5DwgaRqHppCcByRR49AEkvOApGoc6kLyApBUjUMdSF4AkqxxqILkDaC6Ggdp77vzClAdjUMAVBWTA1x/TuMQAA0AoO4UZRoHaYD+ASKOvER0XoMzAAAAAElFTkSuQmCC"
+            />
+          </defs>
+        </svg>
+      </div>
+    </footer>
+  </body>
+</html>

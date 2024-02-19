@@ -129,3 +129,17 @@
     top: -10%;
   }
 }
+.login-button {
+  display: inline;
+  background: linear-gradient(179deg, #f2db4d 0.54%, #f2db4d 203.74%);
+  border-radius: 6px;
+  padding: 0.6rem 2rem;
+  font-family: Fredoka, sans serif;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in, box-shadow 0.3s ease-in;
+  &:hover {
+    background: linear-gradient(179deg, #f2db4d 0.54%, #fab400 203.74%);
+  }
+}

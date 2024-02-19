@@ -1,6 +1,6 @@
-const cleaningOptions = document.querySelectorAll("#cleaning-options");
+const cleaningOptions = Array.from(document.querySelectorAll("#cleaning-options"));
 const selectedCleaningOption = document.getElementById("selected-cleaning-option");
-const propertyOptions = document.querySelectorAll("#propertyOptions");
+const propertyOptions = Array.from(document.querySelectorAll("#propertyOptions"));
 const selectedPropertyOption = document.getElementById("selected-property-option");
 const totalCostValue = document.querySelector(".price-result");
 
@@ -13,11 +13,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function updateCleaningOption(selectedOption) {
     cleaningOptions.forEach((option) => option.classList.remove("desc-selected"));
-
     selectedOption.classList.add("desc-selected");
     selectedCleaningOption.textContent = selectedOption.textContent;
+    if (cleaningOptions[1].classList.contains("desc-selected")) {
+      cleaningOptions[1].value = 15;
+    } else cleaningOptions[1].value = 0;
+    cleaningOptions[0].value = 0;
   }
 });
+
+function getCleaningTypeValue() {
+  for (let option of cleaningOptions) {
+    if (option.classList.contains("desc-selected")) {
+      return option.value;
+    }
+  }
+  return 0;
+}
+function updateTotalCost() {
+  getCleaningTypeValue();
+  const bedrooms = parseInt(document.getElementById("bedroomAmount").textContent);
+  const bathrooms = parseInt(document.getElementById("bathroomsAmount").textContent);
+  const cleaningType = getCleaningTypeVazlue();
+
+  const totalCost = cleaningType + 10 + (bedrooms * 15 + bathrooms * 10);
+
+  const totalCostValue = document.querySelector(".price-result");
+  totalCostValue.textContent = totalCost.toFixed(2) + "$";
+}
 
 document.addEventListener("DOMContentLoaded", function () {
   propertyOptions.forEach((option) => {
@@ -29,7 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
   function updatePropertyOption(selectedOption) {
     propertyOptions.forEach((option) => option.classList.remove("desc-selected"));
     selectedOption.classList.add("desc-selected");
-
     selectedPropertyOption.textContent = selectedOption.textContent;
   }
 });
@@ -74,16 +96,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     config.amountElement.textContent = currentAmount;
     config.selectedRooms.textContent = currentAmount + " " + roomType;
-    updateTotalCost(); // Update total cost when room amount changes
-  }
-
-  function updateTotalCost() {
-    const bedrooms = parseInt(document.getElementById("bedroomAmount").textContent);
-    const bathrooms = parseInt(document.getElementById("bathroomsAmount").textContent);
-
-    const totalCost = 10 + (bedrooms * 30 + bathrooms * 10); // Adjust cost based on your requirements
-
-    const totalCostValue = document.querySelector(".price-result");
-    totalCostValue.textContent = totalCost.toFixed(2) + "$";
+    updateTotalCost();
   }
 });
