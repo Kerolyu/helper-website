@@ -1,0 +1,112 @@
+.form-section {
+  background-color: #bde0fa;
+  padding-bottom: 6rem;
+}
+h1 {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 3rem;
+  max-width: 50vw;
+  font-size: 50px;
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+}
+.desc {
+  text-align: center;
+}
+.flex {
+  display: flex;
+  overflow: hidden;
+  margin-top: 1.5rem;
+  flex-direction: column;
+  @media screen and (min-width: 760px) {
+    flex-direction: row;
+  }
+}
+.flex-child-1 {
+  padding: 1rem 3rem;
+  @media screen and (min-width: 760px) {
+    width: 60%;
+  }
+}
+.flex-child-2 {
+  width: 100%;
+  @media screen and (min-width: 760px) {
+    width: 40%;
+  }
+}
+.form__image {
+  width: 100%;
+  max-height: 500px;
+}
+.form {
+  background-color: #d4eefe;
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  @media screen and (min-width: 760px) {
+    max-width: 80%;
+  }
+}
+.form span {
+  color: orange;
+}
+.form label {
+  text-align: start;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.form input,
+textarea {
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  max-width: 100%;
+  line-height: 30px;
+  height: 30px;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  padding-top: 0.8rem;
+  padding-left: 0.5rem;
+}
+.form textarea {
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  max-width: 100%;
+  height: 60px;
+  padding-bottom: 1rem;
+  font-family: "Cabin", sans-serif;
+  overflow: hidden;
+}
+input::placeholder,
+textarea::placeholder {
+  font-size: 0.9rem;
+}
+.form button {
+  display: inline;
+  text-align: center;
+  background-color: orange;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  width: 140px;
+  font-family: "Cabin", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.form__radio {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+.form__radio--item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}

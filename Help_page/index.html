@@ -12,6 +12,8 @@
     </style>
     <link rel="stylesheet" href="../css/main.min.css" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="phone-number-validation/build/css/demo.css" />
+    <link rel="stylesheet" href="phone-number-validation/build/css/intlTelInput.css" />
     <script src="main.js" defer></script>
   </head>
   <header class="main-header">
@@ -21,10 +23,10 @@
       </a>
       <div class="top-header-wrapper">
         <ul class="top-header__list">
-          <li class="top-header__list-item">
-            <a href="../Help_page/index.html"> Help</a>
+          <li class="top-header__list-item active-subheader-page">
+            <a href="#"> Help</a>
           </li>
-          <li class="top-header__list-item active-subheader-page"><a href="#">FAQ</a></li>
+          <li class="top-header__list-item"><a href="../FAQ/index.html">FAQ</a></li>
           <li class="top-header__list-item"><a href="#">English</a></li>
         </ul>
         <button type="button" class="login-button">Log in/Sign up</button>
@@ -66,74 +68,67 @@
     </div>
   </header>
   <body>
-    <section class="faq-section">
-      <h1>Frequently asked questions</h1>
-      <div class="faq">
-        <div class="faq-item">
-          <div class="faq-item__question">
-            <p>Can I schedule monthly cleaning?</p>
-            <div class="faq-item__button">
-              <div class="hor-line"></div>
-              <div class="ver-line"></div>
+    <section class="form-section">
+      <h1>Fill in a form</h1>
+      <p class="desc">Please leave some additional information about how we can help</p>
+      <div class="flex">
+        <div class="flex-child-1">
+          <form class="form">
+            <label for="name">Full Name <span>*</span></label>
+            <input type="text" name=" name" placeholder="Type name" id="name" required />
+            <label for="email">Email <span>*</span></label>
+            <input
+              type="email"
+              name=" email"
+              placeholder="Type your email"
+              id="email"
+              required
+              minlength="4"
+            />
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Type your phone number"
+              id="phone"
+              onfocus="addPlus()"
+              onblur="removePlus()"
+            />
+            <label for="inquiry"> Write your message <span>*</span></label>
+            <textarea
+              name="inquiry"
+              placeholder="Describe how we can help"
+              id="message"
+              required
+            ></textarea>
+
+            <div class="error" style="color: red"></div>
+            <label for="category">Category <span>*</span></label>
+            <div class="form__radio">
+              <div class="form__radio--item">
+                <input type="radio" name="category" value="payment-issue" id="category" />
+                Payment issue
+              </div>
+              <div class="form__radio--item">
+                <input type="radio" name="category" value="login-issue" id="category" />
+                Log In issue
+              </div>
+              <div class="form__radio--item">
+                <input type="radio" name="category" value="cleaner-issue" id="category" />
+                Cleaner complaint
+              </div>
+              <div class="form__radio--item">
+                <input type="radio" name="category" value="other-issue" id="category" />
+                Other
+              </div>
             </div>
-          </div>
-          <div class="faq-item__answer">
-            <p>
-              Yes, you can set up a schedule for weekly,bi-weekly or monthly cleaning.
-            </p>
-          </div>
+            <div class="error-radio" style="color: red"></div>
+
+            <button type="submit" class="btn btn-primary form-submit">Submit</button>
+          </form>
         </div>
-        <div class="faq-item">
-          <div class="faq-item__question">
-            <p>How Far in Advance Can I Book My Task?</p>
-            <div class="faq-item__button">
-              <div class="hor-line"></div>
-              <div class="ver-line"></div>
-            </div>
-          </div>
-          <div class="faq-item__answer">
-            Yes, you can set up a schedule for weekly,bi-weekly or monthly cleaning.
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-item__question">
-            <p>What Should I Do if I forgot to update the address?</p>
-            <div class="faq-item__button">
-              <div class="hor-line"></div>
-              <div class="ver-line"></div>
-            </div>
-          </div>
-          <div class="faq-item__answer">
-            If an incorrect address was entered when booking and the correct task address
-            is close by, we suggest keeping the task active and sending a message to your
-            Tasker using that task's chat thread to inform them of the correct address.
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-item__question">
-            <p>How can I be sure about the cleaner's credibility?</p>
-            <div class="faq-item__button">
-              <div class="hor-line"></div>
-              <div class="ver-line"></div>
-            </div>
-          </div>
-          <div class="faq-item__answer">
-            All our cleaners go through verification check and we as a company take some
-            of the responsibility as well.
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-item__question">
-            <p>Can I book a Same Day Task?</p>
-            <div class="faq-item__button">
-              <div class="hor-line"></div>
-              <div class="ver-line"></div>
-            </div>
-          </div>
-          <div class="faq-item__answer">
-            You can book same day tasks by changing the date to "Today" while viewing
-            potential Taskers.
-          </div>
+        <div class="flex-child-2">
+          <img src="../images/section-2.svg" alt="" class="form__image" />
         </div>
       </div>
     </section>
@@ -175,22 +170,6 @@
             </ul>
           </div>
         </div>
-        <div class="form-footer">
-          <h3 class="footer-nav-header centered">Subscribe to Newsletter</h3>
-          <div class="form">
-            <div class="input-container ic1">
-              <input id="firstname" class="input" type="text" placeholder=" " />
-              <div class="cut"></div>
-              <label for="firstname" class="placeholder">Full name</label>
-            </div>
-            <div class="input-container ic2">
-              <input id="email" class="input" type="text" placeholder=" " />
-              <div class="cut cut-short"></div>
-              <label for="email" class="placeholder">Email address</label>
-            </div>
-            <button type="submit" class="submit">Subscribe</button>
-          </div>
-        </div>
       </div>
       <div class="decoration">
         <svg
@@ -224,5 +203,24 @@
         </svg>
       </div>
     </footer>
+    <script src="phone-number-validation/build/js/intlTelInput.js"></script>
+    <script>
+      var input = document.querySelector("#phone");
+      window.intlTelInput(input, {});
+    </script>
+    <script>
+      function addPlus() {
+        const phoneInput = document.getElementById("phone");
+        if (!phoneInput.value.startsWith("+")) {
+          phoneInput.value = "+";
+        }
+      }
+      function removePlus() {
+        const phoneInput = document.getElementById("phone");
+        if (phoneInput.value === "+") {
+          phoneInput.value = "";
+        }
+      }
+    </script>
   </body>
 </html>
