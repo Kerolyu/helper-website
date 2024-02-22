@@ -6,6 +6,7 @@
 @import "./sections/section-5";
 @import "./sections/footer";
 @import "./components/mobile-menu";
+@import "./sections/modal-log-in";
 
 *button {
   cursor: pointer;
@@ -69,4 +70,12 @@ button {
 }
 html {
   scroll-behavior: smooth;
+}
+.error-style {
+  position: absolute;
+  top: -40px;
+  left: 40px;
+  background-color: var(--yellow);
+  border-radius: 10px;
+  padding: 0.3rem;
 }

@@ -1,0 +1,53 @@
+.log-in-modal {
+  top: 15%;
+  left: 0;
+  right: 0;
+  position: absolute;
+  width: 500px;
+  height: 700px;
+  background-color: var(--light-blue);
+  margin: 0 auto;
+  border-radius: 20px;
+  z-index: 10;
+  overflow: hidden;
+}
+.log-in-modal img {
+  width: 100%;
+  position: relative;
+  bottom: -52%;
+  z-index: -1;
+}
+.background-blur {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #3433334f;
+  backdrop-filter: blur(1px);
+}
+.close-modal {
+  font-size: 1.2rem;
+  position: relative;
+  top: 18px;
+  right: -18px;
+}
+.modal-hidden {
+  display: none;
+  pointer-events: none;
+}
+.modal-titles {
+  display: flex;
+  justify-content: space-around;
+  &__option {
+    border-radius: 8px;
+    padding: 1rem;
+    cursor: pointer;
+    color: grey;
+  }
+}
+.login-active {
+  color: black;
+  background-color: var(--bright-blue);
+}
