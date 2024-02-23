@@ -2272,8 +2272,32 @@
     <div class="log-in-modal modal-hidden">
       <button class="close-modal">X</button>
       <div class="modal-titles">
-        <h2 class="modal-titles__option login-active">Sign Up</h2>
-        <h2 class="modal-titles__option">Log In</h2>
+        <h2 class="modal-titles__option login-active" id="sign-up-button">Sign Up</h2>
+        <h2 class="modal-titles__option" id="log-in-button">Log In</h2>
+      </div>
+      <div class="modal-tab" id="register-tab">
+        <form class="modal-form sign-up-form">
+          <p>Let's create your account!</p>
+          <label class="hidden" for="first-name">First Name</label>
+          <input type="text" required placeholder="First Name" />
+          <label class="hidden" for="last-name">Last Name</label>
+          <input type="text" required placeholder="Last Name" />
+          <label class="hidden" for="email-address ">Email aAddress</label>
+          <input type="email" required placeholder="Email Address" />
+          <label class="hidden" for="password">First Name</label>
+          <input type="password" required placeholder="Password" />
+          <button type="submit" class="modal-form-button">Continue</button>
+        </form>
+      </div>
+      <div class="modal-tab hidden" id="login-tab">
+        <form class="modal-form log-in-form">
+          <p>Enter your details to login</p>
+          <label class="hidden" for="email-address ">Email aAddress</label>
+          <input type="email" required placeholder="Email Address" />
+          <label class="hidden" for="password">First Name</label>
+          <input type="password" required placeholder="Password" />
+          <button type="submit" class="modal-form-button">Continue</button>
+        </form>
       </div>
 
       <img src="images/login-bg.svg" alt="" />
